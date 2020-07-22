@@ -3,19 +3,19 @@
 export = consistent_hashing;
 
 declare class consistent_hashing {
-    constructor(nodes: any, options: any);
+    constructor(nodes: string[], options: any);
 
-    addNode(node: any): void;
+    addNode(node: string): void;
 
-    compare(v1: any, v2: any): any;
+    compare(v1: string, v2: string): any;
 
     crypto(str: any): any;
 
-    getNode(key: any): any;
+    getNode(key: string): any;
 
-    getNodePosition(hash: any): any;
+    getNodePosition(hash: string): any;
 
-    getRingLength(): any;
+    getRingLength(): number;
 
-    removeNode(node: any): void;
+    removeNode(node: string): void;
 }
