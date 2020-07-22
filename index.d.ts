@@ -4,18 +4,11 @@ export = consistent_hashing;
 
 declare class consistent_hashing {
     constructor(nodes: string[], options: any);
-
     addNode(node: string): void;
-
-    compare(v1: string, v2: string): any;
-
-    crypto(str: any): any;
-
-    getNode(key: string): any;
-
-    getNodePosition(hash: string): any;
-
+    compare(v1: string, v2: string): number;
+    crypto(str: string): string;
+    getNode(key: string): string;
+    getNodePosition(hash: string): number;
     getRingLength(): number;
-
     removeNode(node: string): void;
 }
